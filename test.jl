@@ -31,4 +31,4 @@ for ti in 2:length(tspan)
     # QFI
     append!(F, QuanEstimation.QFIM(rho[ti], drho[ti]))
 end
-
+🎉
