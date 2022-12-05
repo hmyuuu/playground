@@ -26,14 +26,9 @@ rho, drho = QuanEstimation.expm(tspan, rho0, H0, dH, decay)
 # calculation of the QFI
 I, F = Float64[], Float64[]
 for ti in 2:length(tspan)
-    # CFI
+    # CFI 
     append!(I, QuanEstimation.CFIM(rho[ti], drho[ti], M))
     # QFI
     append!(F, QuanEstimation.QFIM(rho[ti], drho[ti]))
 end
 
-~
-~
-~
-~
-~
